@@ -1,14 +1,17 @@
 {
-  "name": "motcha",
+  "name": "chatrix",
   "version": "1.0.0",
-  "description": "motcha is a social media platform",
+  "description": "chatrix is a social media platform",
   "main": "server.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon server",
+    "start": "node server.js",
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elregalo/motcha.git"
+    "url": "git+https://github.com/elregalo/chatrix.git"
   },
   "keywords": [
     "nodejs",
@@ -16,20 +19,22 @@
     "socket.io",
     "social-media",
     "chat-app",
-    "motcha"
+    "chatrix"
   ],
   "author": "Moobi Kabelo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elregalo/motcha/issues"
+    "url": "https://github.com/elregalo/chatrix/issues"
   },
-  "homepage": "https://github.com/elregalo/motcha#readme",
+  "homepage": "https://github.com/elregalo/chatrix#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "helmet": "^5.1.0",
     "ip": "^1.1.8"
   }
 }
